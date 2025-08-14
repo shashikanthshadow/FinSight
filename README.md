@@ -64,38 +64,38 @@ finsight/
 ```
 
 
-⚡ Setup & Installation
+## ⚡ Setup & Installation
 
-Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/shashikanthshadow/FinSight.git
 cd finsight
 ```
 
-Install Dependencies
+### Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-Set Environment Variables
+### Set Environment Variables
 Create a .env file:
 ```bash
 GEMINI_API_KEY=your_gemini_api_key
 ```
+ 
 
-
-Run the Application
+### Run the Application
 ```bash
 uvicorn app:app --reload
 ```
 
-Open in Browser
+###Open in Browser
 Visit: http://127.0.0.1:8000
 
 
-📊 Example Output
+## 📊 Example Output
 
-Example structured JSON from Gemini:
+### Example structured JSON from Gemini:
 ```bash
 {
   "title": "Personalized Financial Plan",
