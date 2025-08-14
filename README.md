@@ -13,7 +13,7 @@ It integrates **real-time market data** and **structured LLM responses** for act
 
 ## 📺 Demo
 
-![FinSight Demo](static/demo.gif)  
+![FinSight Demo](static/FinSight.gif)  
 *Above: FinSight analyzing expenses and generating a structured financial plan.*
 
 ---
