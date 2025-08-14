@@ -1,4 +1,4 @@
-# 📊 FinSight – AI-Powered Personal Finance Advisor
+  # 📊 FinSight – AI-Powered Personal Finance Advisor
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)](https://fastapi.tiangolo.com/)
@@ -68,7 +68,7 @@ finsight/
 
 Clone the Repository
 ```bash
-git clone https://github.com/yourusername/finsight.git
+git clone https://github.com/shashikanthshadow/FinSight.git
 cd finsight
 ```
 
