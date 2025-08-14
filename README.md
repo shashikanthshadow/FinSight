@@ -111,3 +111,8 @@ Example structured JSON from Gemini:
 }
 
 ```
+
+## ⚠️ Disclaimer
+
+FinSight provides educational financial insights and is not a substitute for professional financial advice.
+Always consult a certified financial advisor before making investment decisions.
