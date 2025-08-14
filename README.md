@@ -89,7 +89,7 @@ GEMINI_API_KEY=your_gemini_api_key
 uvicorn app:app --reload
 ```
 
-###Open in Browser
+### Open in Browser
 Visit: http://127.0.0.1:8000
 
 
