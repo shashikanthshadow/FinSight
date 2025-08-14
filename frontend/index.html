@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FinSight – AI-Powered Personal Finance Advisor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- Marked.js library is added here to correctly render markdown from the backend -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <!-- Animated background coins -->
+  <div class="floating-coins">
+    <div class="coin">₹</div><div class="coin">₹</div><div class="coin">₹</div>
+    <div class="coin">₹</div><div class="coin">₹</div><div class="coin">₹</div>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>FinSight <span>AI-Powered Personal Finance Advisor</span></h1>
+      <p class="subtitle">Agentic personal finance planner with live markets</p>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <div class="col">
+          <label>Monthly Income (₹)</label>
+          <input id="income" type="number" min="0" placeholder="e.g., 50000" />
+        </div>
+        <div class="col">
+          <button id="addRow" class="btn secondary">+ Add Expense</button>
+        </div>
+      </div>
+
+      <div id="expenses"></div>
+
+      <div class="row">
+        <button id="analyzeBtn" class="btn primary">Analyze Budget</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card chart-card">
+        <h3>Category Breakdown</h3>
+        <canvas id="pieChart"></canvas>
+      </div>
+
+      <div class="card chart-card">
+        <h3>Spending vs Income</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>AI Advice</h3>
+      <div id="advice" class="advice"></div>
+    </section>
+
+    <footer>
+      <small>Built with LangChain • LangSmith • Gemini • FastAPI • Chart.js</small>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

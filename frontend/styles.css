@@ -1,0 +1,92 @@
+:root{
+  --bg:#0b1220;
+  --card:#121a2b;
+  --text:#e8ecf3;
+  --accent:#74f0d3;
+  --accent2:#8ab4ff;
+  --muted:#97a0b3;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%
+}
+body{
+  margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  color:var(--text); background:radial-gradient(1200px 600px at 20% 10%, #0e1830 0%, #0b1220 60%, #0a0f1a 100%);
+  overflow-x:hidden;
+}
+
+.container{width:min(1100px, 94%); margin:40px auto}
+
+header{text-align:center; margin-bottom:18px}
+h1{font-weight:800; letter-spacing:.5px; margin:0 0 6px}
+h1 span{color:var(--accent)}
+.subtitle{color:var(--muted); margin:0 0 10px}
+
+.card{
+  background:linear-gradient(180deg, #121a2b 0%, #0f1726 100%);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:18px; padding:18px; margin:14px 0;
+  box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+.row{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
+.col{flex:1; min-width:220px}
+
+label{display:block; font-size:14px; color:var(--muted); margin:0 0 8px}
+input, select{
+  width:100%; padding:12px 14px; background:#0c1424; color:var(--text);
+  border:1px solid rgba(255,255,255,0.08); border-radius:12px; outline:none;
+}
+input::placeholder{color:#7782a1}
+
+.btn{
+  border:none; padding:12px 16px; border-radius:12px; cursor:pointer; font-weight:700;
+  box-shadow:0 6px 18px rgba(0,0,0,.25); transition:transform .1s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn.primary{background:linear-gradient(90deg, var(--accent), var(--accent2)); color:#00121a}
+.btn.secondary{background:#17223a; color:var(--text); border:1px solid rgba(255,255,255,0.06)}
+
+.grid{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.chart-card canvas{width:100%; height:320px}
+
+.advice{
+  white-space:pre-wrap; line-height:1.55; font-size:15px; color:#eaf6ff;
+  background:#0b1426; padding:14px; border-radius:14px; border:1px solid rgba(255,255,255,0.06);
+}
+
+footer{margin:14px 0; text-align:center; color:var(--muted)}
+
+/* Expense rows */
+.expense-row{display:grid; grid-template-columns:1.2fr 1fr 1fr auto; gap:10px; margin:10px 0}
+.remove{background:#2a334b; color:#fff; border:1px solid rgba(255,255,255,0.08)}
+.category{appearance:none}
+
+/* Floating coins animation */
+.floating-coins{position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:-1}
+.coin{
+  position:absolute; left:-10vw; top:calc(10% + 80vh * var(--i));
+  font-size: clamp(18px, 2.2vw, 34px);
+  color:#ffe082; opacity:0.15; filter:blur(0.2px);
+  animation: float 12s linear infinite;
+}
+.coin:nth-child(odd){color:#ffd54f; opacity:0.18}
+.coin:nth-child(3n){color:#fff59d; opacity:0.12}
+.coin:nth-child(1){--i:.05; animation-delay: -2s}
+.coin:nth-child(2){--i:.2;  animation-delay: -4s}
+.coin:nth-child(3){--i:.35; animation-delay: -6s}
+.coin:nth-child(4){--i:.5;  animation-delay: -8s}
+.coin:nth-child(5){--i:.7;  animation-delay: -10s}
+.coin:nth-child(6){--i:.9;  animation-delay: -12s}
+
+@keyframes float{
+  0%{transform:translateX(0) translateY(-10px) rotate(0)}
+  50%{transform:translateX(55vw) translateY(10px) rotate(180deg)}
+  100%{transform:translateX(110vw) translateY(-10px) rotate(360deg)}
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .grid{grid-template-columns:1fr}
+}
