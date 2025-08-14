@@ -1,18 +1,31 @@
 # 📊 FinSight – AI-Powered Personal Finance Advisor
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![Gemini](https://img.shields.io/badge/LLM-Gemini%202.0-orange)](https://ai.google.dev/)
+[![License](https://img.shields.io/badge/License-MIT-purple)](LICENSE)
+[![Made with Love](https://img.shields.io/badge/Made%20with-Love-red)](#)
+
 FinSight is an **AI-powered personal finance advisor** that helps users track expenses, categorize spending, set savings goals, and receive personalized budgeting & investment strategies.  
 It integrates **real-time market data** and **structured LLM responses** for actionable financial insights.
 
 ---
 
+## 📺 Demo
+
+![FinSight Demo](static/demo.gif)  
+*Above: FinSight analyzing expenses and generating a structured financial plan.*
+
+---
+
 ## 🚀 Features
 
-- **Expense Categorization** – Automatically assigns spending to categories (Housing, Utilities, Groceries, etc.)  
-- **Budget Recommendations** – Calculates needs/wants caps and suggested savings targets  
-- **LLM-Powered Advice** – Generates structured JSON financial plans using **Gemini 2.0 Flash API**  
-- **Live Market Data** – Fetches real-time stock & crypto prices from **Yahoo Finance** and **CoinGecko**  
-- **Interactive Frontend** – Add/remove expenses dynamically, view spending insights with **Chart.js** visualizations  
-- **Risk Disclaimers & 3-Month Plan** – Ensures safe and structured investment strategies  
+- **💰 Expense Categorization** – Automatically assigns spending to categories (Housing, Utilities, Groceries, etc.)  
+- **📊 Budget Recommendations** – Calculates needs/wants caps and suggested savings targets  
+- **🤖 LLM-Powered Advice** – Generates structured JSON financial plans using **Gemini 2.0 Flash API**  
+- **📈 Live Market Data** – Fetches real-time stock & crypto prices from **Yahoo Finance** and **CoinGecko**  
+- **🎨 Interactive Frontend** – Add/remove expenses dynamically, view spending insights with **Chart.js** visualizations  
+- **⚠️ Risk Disclaimers & 3-Month Plan** – Ensures safe and structured investment strategies  
 
 ---
 
@@ -34,6 +47,8 @@ It integrates **real-time market data** and **structured LLM responses** for act
 ---
 
 ## 📂 Project Structure
+
+
 ```bash 
 finsight/
 │── app.py                 # FastAPI backend entry point
